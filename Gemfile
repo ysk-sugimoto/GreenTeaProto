@@ -41,3 +41,16 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+group :test do
+  gem 'rspec-rails'
+  gem "cucumber-rails", "~> 1.0", require: false
+  gem 'database_cleaner'
+  gem 'spork'
+  gem 'capybara' ,git: 'git://github.com/jnicklas/capybara.git'
+  gem 'guard'
+  gem 'guard-spork'
+  gem 'guard-rspec'
+  gem 'guard-cucumber'
+  gem 'factory_girl_rails'
+end
